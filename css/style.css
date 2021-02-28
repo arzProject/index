@@ -105,6 +105,16 @@ body {
   top: 0;
   right: 0;
 }
+.block-base .block-menu .menu-content:before {
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(250, 250, 250, 0.1);
+}
 .block-base .block-menu .menu-content.active {
   transition: 0.5s;
   transform: translateX(0);
@@ -118,6 +128,16 @@ body {
   background-color: rgba(250, 250, 250, 0.1);
   top: 0;
   right: 0;
+}
+.block-base .block-menu .menu-content.active.activeAfter:before {
+  transition: 2s;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 98%;
+  top: 0;
+  left: 0;
+  background-color: rgba(250, 250, 250, 0.1);
 }
 .block-base .block-menu .menu-content .menu-item {
   transition: 1s;
